@@ -1,0 +1,35 @@
+.nosotros .contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+}
+
+/* Estilos para pantallas de 768 píxeles o más */
+
+@media (min-width: 992px){
+    .nosotros .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.footer{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*  Estilos para pantallas entre 768 y 991 píxeles de ancho */ 
+
+/*
+En otras palabras, esta regla se usa para aplicar estilos a dispositivos con pantallas más pequeñas, como teléfonos móviles, 
+donde el ancho de pantalla es limitado. Por ejemplo, si deseas que un elemento de tu sitio web tenga un tamaño de fuente determinado solo 
+en pantallas más pequeñas, puedes definir la regla "@media (max-width: valor)" en tu hoja de 
+estilos CSS y luego especificar el tamaño de fuente deseado para el elemento en esa regla.
+@media (max-width: 767px) {
+Estilos para pantallas de hasta 767 píxeles de ancho
+  .mi-elemento {
+    font-size: 1.2em;
+  }
+}*/
